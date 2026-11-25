@@ -1,0 +1,35 @@
+name: balloon_game
+description: "Flutter and Unity 6 embedded balloon game integration."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_embed_unity: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/Balloon GameLogo.jpg
+
+flutter_native_splash:
+  color: "#38BDF8"
+  image: "assets/images/splash_logo.png"
+  android: true
+  ios: true
+  web: false
+  android_12:
+    color: "#38BDF8"
+    icon_background_color: "#38BDF8"
+    image: "assets/images/splash_logo.png"
